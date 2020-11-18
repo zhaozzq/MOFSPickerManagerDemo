@@ -28,7 +28,11 @@ typedef NS_ENUM(NSInteger, SearchType) {
 @property (nonatomic, assign) NSInteger numberOfSection;
 @property (nonatomic, assign) BOOL usedXML;
 
+@property (nonatomic, copy) NSString *jsonFilePath;
+
 @property (nullable, nonatomic, strong) NSDictionary<NSAttributedStringKey, id> *attributes;
+
+- (instancetype)initWithFrame:(CGRect)frame jsonFilePath:(NSString *)path;
 
 - (void)showMOFSAddressPickerCommitBlock:(void(^_Nullable)(NSString * _Nullable address, NSString * _Nullable zipcode))commitBlock cancelBlock:(void(^_Nullable)(void))cancelBlock;
 

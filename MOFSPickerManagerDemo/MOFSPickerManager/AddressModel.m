@@ -21,8 +21,8 @@
     self = [super init];
     if (self) {
         if (dictionary) {
-            self.name = dictionary[@"name"];
-            self.zipcode = dictionary[@"zipcode"];
+            self.name = dictionary[@"text"];
+            self.zipcode = dictionary[@"id"];
         }
     }
     return self;
@@ -43,8 +43,8 @@
     self = [super init];
     if (self) {
         if (dictionary) {
-            self.name = dictionary[@"name"];
-            self.zipcode = dictionary[@"zipcode"];
+            self.name = dictionary[@"text"];
+            self.zipcode = dictionary[@"id"];
         }
     }
     return self;
@@ -58,8 +58,8 @@
     self = [super init];
     if (self) {
         if (dictionary) {
-            self.name = dictionary[@"name"];
-            self.zipcode = dictionary[@"zipcode"];
+            self.name = dictionary[@"text"];
+            self.zipcode = dictionary[@"id"];
         }
     }
     return self;
